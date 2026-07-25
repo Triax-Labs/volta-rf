@@ -1,6 +1,7 @@
 # VoltaRF
 
 VoltaRF is a homebrew software defined radio (SDR), it is based on parts found inside a cheap 'n old satellite DVB-S television receiver.
+<img width="1570" height="891" alt="gif showing PCB layers" src="https://github.com/user-attachments/assets/7834f187-9ba2-4d0f-aab8-66bedd255f9f" />
 
 ## Parts
 - Qorvo's SGL0622Z (LNA)
