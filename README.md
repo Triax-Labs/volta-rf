@@ -5,13 +5,23 @@ VoltaRF is a homebrew software defined radio (SDR), it is based on parts found i
 
 ## Parts
 - Qorvo's SGL0622Z (LNA)
-- SkyWorks' RDA5815 (RF Interface & Tuner)
+- SkyWorks' RDA5815M (RF Interface & Tuner)
 - WCH's CH32V317WCU6 (MCU, ADC and USB Interface)
 - China's AMS1117-3.3v (Voltage Regulator, _yes_)
 
 The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C.
 
-As of right now, this all only sits inside a design file, firmware still needs to be written. The goal is simple, clock both ADCs really fast, sample I and Q at the same time, stream those samples over USB UAC, let the computer do the rest.
+## Production
+Production is done through JLCPCB's PCBA service, production files are found inside `/hardware/production` and the BOM has been optimized for JLC's library of parts.
+
+When ordering an assembled board, make sure all footprints are rotated in their right place with dots aligning.
+
+Some parts don't exist on JLCPCB, so you will have to source and assemble them yourself, most notable one is the RDA5815M RF tuner chip.
+
+## Firmware
+Given that I hadn't received a prototype board yet, firmware remains a to be desired thing.
+
+This all only sits inside a design file. However, the idea is simple, clock both ADCs really fast, sample I and Q at the same time with each ADC, stream those samples over USB UAC using DMA, and let the computer do the rest.
 
 ---
 [![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
