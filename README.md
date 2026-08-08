@@ -3,13 +3,20 @@
 VoltaRF is a homebrew software defined radio (SDR), it is based on parts found inside a cheap 'n old satellite DVB-S television receiver.
 <img width="1570" height="891" alt="gif showing PCB layers" src="https://github.com/user-attachments/assets/7834f187-9ba2-4d0f-aab8-66bedd255f9f" />
 
+## Background
+Due to the fact that RTL-SDRs are quite hard to find locally  (due to restrictions), I have decided to build my own alternative out of already existing and easily available appliances.
+
+The RTL-SDR itself being a by product of a television related product, I decided to base my own SDR on satellite television receiver parts, most notably the RF tuner found inside those.
+
+After some testing I was able of finding out one very common RF tuner chip, the RDA5815. When it was put to testing I was able of getting it to tune in the range of 50MHz and all the way up to 2.5GHz (covering amateur bands, ISM, commercial broadcasting as well as radionavigation and air traffic.)
+
+The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C. I can only guarantee 4MHz of bandwidth, unless we overclock the ADCs.
+
 ## Parts
 - Qorvo's SGL0622Z (LNA)
 - SkyWorks' RDA5815M (RF Interface & Tuner)
 - WCH's CH32V317WCU6 (MCU, ADC and USB Interface)
 - China's AMS1117-3.3v (Voltage Regulator, _yes_)
-
-The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C.
 
 ## Production
 Production is done through [JLCPCB](https://jlcpcb.com)'s PCBA service.
