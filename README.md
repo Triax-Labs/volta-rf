@@ -1,4 +1,4 @@
-# VoltaRF
+<img width="869" height="376" alt="image" src="https://github.com/user-attachments/assets/794585ba-1429-440c-b368-fa189e0d3002" /># VoltaRF
 
 VoltaRF is a homebrew software defined radio (SDR), it is based on parts found inside a cheap 'n old satellite DVB-S television receiver.
 <img width="1570" height="891" alt="gif showing PCB layers" src="https://github.com/user-attachments/assets/7834f187-9ba2-4d0f-aab8-66bedd255f9f" />
@@ -12,7 +12,15 @@ VoltaRF is a homebrew software defined radio (SDR), it is based on parts found i
 The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C.
 
 ## Production
-Production is done through [JLCPCB](https://jlcpcb.com)'s PCBA service. Revision I should be around 60$ for both the PCB as well as assembly at the quantity of 5 boards.
+Production is done through [JLCPCB](https://jlcpcb.com)'s PCBA service.
+
+| Item     |  Price  |   Qty   |  Where  |
+| -------- | ------- | ------- | ------- |
+|  PCB     |   $7    | 5 Boards| [JLCPCB](https://jlcpcb.com) |
+|  PCBA    |   $60   | 5 Boards| [JLCPCB](https://jlcpcb.com) |
+
+_Those are estimated prices, and they exclude shipping._ 
+[Here you can find the entirety of the BOM.](https://github.com/Triax-Labs/volta-rf/blob/main/hardware/production/bom.csv)
 
 Production files could be found inside `/hardware/production`, the BOM has been optimized for JLC's library of parts.
 
