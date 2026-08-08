@@ -12,11 +12,15 @@ VoltaRF is a homebrew software defined radio (SDR), it is based on parts found i
 The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C.
 
 ## Production
-Production is done through JLCPCB's PCBA service, production files are found inside `/hardware/production` and the BOM has been optimized for JLC's library of parts.
+Production is done through [JLCPCB](https://jlcpcb.com)'s PCBA service. Revision I should be around 60$ for both the PCB as well as assembly at the quantity of 5 boards.
+
+Production files could be found inside `/hardware/production`, the BOM has been optimized for JLC's library of parts.
+
+Revision I should be around 60$ for both the PCB as well as the assembly, this excludes shipping costs however.
 
 When ordering an assembled board, make sure all footprints are rotated in their right place with dots aligning.
 
-Some parts don't exist on JLCPCB, so you will have to source and assemble them yourself, most notable one is the RDA5815M RF tuner chip.
+Some parts don't exist on JLCPCB, so you will have to source and assemble them yourself, most notable one is the RDA5815M RF tuner chip, you can buy it from AliExpress instead.
 
 ## Firmware
 Given that I hadn't received a prototype board yet, firmware remains a to be desired thing.
