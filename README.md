@@ -1,7 +1,7 @@
 > [!CAUTION]
-> We claim **ZERO responsibility** against individuals who choose operate, produce or sell this hardware. This repository exists strictly for educational research purposes ONLY.
+> We claim **ZERO responsibility** against individuals who choose operate, produce or sell this hardware. This repository exists strictly for educational & research purposes only.
 >
-> All testing for this hardware were done inside a controlled lab environment with all the proper local licenses needed for needed experiments.
+> All tests for this hardware were done inside a controlled lab environment with all the proper local licenses needed for needed experiments.
 >
 > Please mind your local radio & telecommunication laws.
 
