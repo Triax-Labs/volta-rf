@@ -1,3 +1,11 @@
+> [!CAUTION]
+> We claim **ZERO responsibility** against individuals who choose operate, produce or sell this hardware. This repository exists strictly for educational research purposes ONLY.
+>
+> All testing for this hardware were done inside a controlled lab environment with all the proper local licenses needed for needed experiments.
+>
+> Please mind your local radio & telecommunication laws.
+
+
 # VoltaRF
 
 VoltaRF is a homebrew software defined radio (SDR), it is based on parts found inside a cheap 'n old satellite DVB-S television receiver.
@@ -6,7 +14,7 @@ VoltaRF is a homebrew software defined radio (SDR), it is based on parts found i
 ![](https://cdn.hackclub.com/01a0f4a4-c322-753e-a820-26821cb9c48e/volta-rf-front.png)
 ![](https://cdn.hackclub.com/01a0f4a4-b42a-7eef-a88b-945dd3e868cc/volta-rf-back.png)
 
-VoltaRF could Also be used as a good ol' development board around the CH32H417 flagship platform, all GPIOs are exposed!
+VoltaRF could also be used as an expressive development board around the CH32H417 flagship platform, all GPIOs are exposed!
 
 ## Background
 
@@ -14,25 +22,26 @@ Due to the fact that RTL-SDRs are quite hard to find locally (due to restriction
 
 The RTL-SDR itself being a by product of a television related product, I decided to base my own SDR on satellite television receiver parts, most notably the RF tuner found inside those.
 
-After some testing I was able of finding out one very common RF tuner chip, the RDA5815. When it was put to testing I was able of getting it to tune in the range of 50MHz and all the way up to 2.5GHz (covering amateur bands, ISM, commercial broadcasting as well as radionavigation and air traffic.)
+After some testing I was able of finding out one very common RF tuner chip, the RDA5815. When it was put to testing I was able of getting it to tune in the range of 50MHz and all the way up to 2.5GHz (covering amateur bands, ISM, commercial broadcasting as well as radio-navigation and air traffic.)
 
-The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C. I can only guarantee 4MHz of bandwidth, unless we overclock the ADCs.
+The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, thankfully the LPF is configurable over I2C. I can only guarantee 4MHz of bandwidth, unless the ADCs were overclocked.
 
 ## Main Parts
 
 - Qorvo's SGL0622Z (LNA)
 - SkyWorks' RDA5815M (RF Interface & Tuner)
 - WCH's CH32H417QEU6 (MCU, ADC and USB Interface)
-  [Here you can find the entirety of the BOM.](https://github.com/Triax-Labs/volta-rf/blob/main/hardware/production/bom.csv)
+
+[Here you find the entirety of the BOM.](https://github.com/Triax-Labs/volta-rf/blob/main/hardware/production/bom.csv)
 
 ## Production
 
 Production is done through [JLCPCB](https://jlcpcb.com)'s PCBA service.
 
-| Item | Price | Qty      | Where                        |
-| ---- | ----- | -------- | ---------------------------- |
-| PCB  | $8    | 5 Boards | [JLCPCB](https://jlcpcb.com) |
-| PCBA | $120  | 5 Boards | [JLCPCB](https://jlcpcb.com) |
+| Item | Price | Qty      |
+| ---- | ----- | -------- |
+| PCB  | $8    | 5 Boards |
+| PCBA | $120  | 5 Boards |
 
 _Those are estimated prices, and they don't include shipping._
 
@@ -41,6 +50,10 @@ Production files could be found inside `/hardware/production`, the BOM has been 
 When ordering an assembled board, make sure all footprints are rotated in their right place with dots aligning.
 
 Some parts don't exist on JLCPCB, so you will have to source and assemble them yourself, most notable one is the RDA5815M RF tuner chip, you can buy it from AliExpress instead.
+
+---
+
+![](https://y.getyarn.io/da11a8a4-f748-48cc-aa6f-c757abac66a4_text.gif)
 
 ---
 
