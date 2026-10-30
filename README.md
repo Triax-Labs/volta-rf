@@ -1,5 +1,5 @@
 > [!CAUTION]
-> We claim **ZERO responsibility** against individuals who choose operate, produce or sell this hardware. This repository exists strictly for educational & research purposes only.
+> We claim **ZERO responsibility** against individuals who choose to operate, produce or sell this hardware. This repository exists strictly for educational & research purposes only.
 >
 > All tests for this hardware were done inside a controlled lab environment with all the proper local licenses needed for needed experiments.
 >
@@ -28,8 +28,8 @@ The RDA5815 tuner claims a bandwidth range of 4MHz all the way up to 40MHz, than
 
 ## Main Parts
 
-- Qorvo's SGL0622Z (LNA)
 - SkyWorks' RDA5815M (RF Interface & Tuner)
+- Qorvo's (ironically, part of SkyWorks now) SGL0622Z (LNA)
 - WCH's CH32H417QEU6 (MCU, ADC and USB Interface)
 
 [Here you find the entirety of the BOM.](https://github.com/Triax-Labs/volta-rf/blob/main/hardware/production/bom.csv)
